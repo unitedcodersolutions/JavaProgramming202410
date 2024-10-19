@@ -1,4 +1,4 @@
-package com.unitedcoder;
+package com.unitedcoder.basic;
 
 public class HelloWorld {
     public static void main(String[] args) {
