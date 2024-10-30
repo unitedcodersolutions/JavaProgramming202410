@@ -1,7 +1,8 @@
 package com.unitedcoder.datatype;
 
 public class StringDemo2 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         // a and b are string literals
         String a="Hello";
         String b="Hello";

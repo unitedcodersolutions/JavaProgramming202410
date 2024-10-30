@@ -13,6 +13,7 @@ public class StringDemo4 {
         System.out.println(StringUtils.compare(a,b));
 
         String myString="kfjdkfjeorueojdlfjdlkafjladfjldsfjdklfjeldfjsldafjdlfjd;safjads";
+        
         System.out.println(StringUtils.countMatches(myString,"a"));
         System.out.println(StringUtils.rotate(a,4));
         System.out.println(StringUtils.getCommonPrefix("Dolkun Tarim","Dolkun Tursun","Dolkun Dolkun"));
