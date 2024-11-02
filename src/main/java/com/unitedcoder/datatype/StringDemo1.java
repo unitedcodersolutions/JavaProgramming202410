@@ -20,5 +20,7 @@ public class StringDemo1 {
         String firstName, lastName;
         firstName="Dolkun"; lastName="Tarim" ;
         System.out.println(firstName+" "+lastName);
+
+
     }
 }
