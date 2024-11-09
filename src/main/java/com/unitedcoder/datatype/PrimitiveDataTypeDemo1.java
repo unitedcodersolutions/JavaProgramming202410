@@ -3,8 +3,10 @@ package com.unitedcoder.datatype;
 public class PrimitiveDataTypeDemo1 {
     public static void main(String[] args) {
         //byte- smallest primitive data type
-        byte age=28;
+        byte age=23;
         byte score=98;
+        byte sumByte= (byte) ((byte)age+(byte)score);
+        System.out.println(sumByte);
         System.out.println(String.format("I am %s years old.",age));
         System.out.println(score);
         //short
