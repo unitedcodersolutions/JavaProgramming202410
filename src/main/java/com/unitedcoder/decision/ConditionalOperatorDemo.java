@@ -15,6 +15,8 @@ public class ConditionalOperatorDemo {
        // else
         // max=n2;
         //System.out.println("Max number is "+max);
-        System.out.println(String.format("Max number is %d",(n1>n2)?n1:n2));
+        //conditional operators if(condition)? value1: value2
+        int max= (n1>n2) ? n1: n2;
+        System.out.println(String.format("Max number is %d",max));
     }
 }
