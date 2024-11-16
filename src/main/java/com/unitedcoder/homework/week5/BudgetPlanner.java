@@ -1,5 +1,7 @@
 package com.unitedcoder.homework.week5;
 
+import java.util.Scanner;
+
 public class BudgetPlanner {
     /*
     *Project Requirement : Personal Budget Planner**
@@ -30,6 +32,19 @@ Enter the amount for Groceries: 300
 Remaining balance for the month: 1800
      */
     public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter your total monthly income: ");
+        int income=input.nextInt();
+        System.out.println("Enter your expense description: ");
+        String expenseType=input.next();
+        System.out.println("Enter the amount for Rent: ");
+        int rent=input.nextInt();
+        System.out.println("Enter your expense description: ");
+        String expenseDesc=input.next();
+        System.out.println("Enter the amount for Groceries: ");
+        int groceries=input.nextInt();
+        int balance=income-rent-groceries;
 
+        System.out.println("Remaining balance for the month "+balance);
     }
 }
