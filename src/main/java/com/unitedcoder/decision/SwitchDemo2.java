@@ -1,0 +1,55 @@
+package com.unitedcoder.decision;
+
+import java.util.Scanner;
+
+public class SwitchDemo2 {
+    //print the name of each month based on the month number input
+    //for example month=1, print January, month=2, print February....
+    public static void main(String[] args) {
+        Scanner monthInput = new Scanner(System.in);
+        System.out.println("Please input a number for the month from 1 to 12");
+        int month = monthInput.nextInt();
+        if (month > 12 || month < 0)
+            System.out.println("Please enter a valid number for the month");
+        else {
+            switch (month) {
+                case 1:
+                    System.out.println("January");
+                    break;
+                case 2:
+                    System.out.println("February");
+                    break;
+                case 3:
+                    System.out.println("March");
+                    break;
+                case 4:
+                    System.out.println("April");
+                    break;
+                case 5:
+                    System.out.println("May");
+                    break;
+                case 6:
+                    System.out.println("June");
+                    break;
+                case 7:
+                    System.out.println("July");
+                    break;
+                case 8:
+                    System.out.println("August");
+                    break;
+                case 9:
+                    System.out.println("September");
+                    break;
+                case 10:
+                    System.out.println("October");
+                    break;
+                case 11:
+                    System.out.println("November");
+                    break;
+                case 12:
+                    System.out.println("December");
+                    break;
+            }
+        }
+    }
+}
