@@ -10,6 +10,7 @@ public class PasswordCheckerTest {
     {
         PasswordChecker passwordChecker=new PasswordChecker();
         Assertions.assertEquals(passwordChecker.checkPassword("Ab$123trpaTA!"),"strong");
+        Assertions.assertEquals(passwordChecker.checkPassword("Ab$123trpaTA!123tierei"),"strong");
         Assertions.assertEquals(passwordChecker.checkPassword("123456"),"weak");
         Assertions.assertEquals(passwordChecker.checkPassword("PaTr1234567"),"normal");
     }

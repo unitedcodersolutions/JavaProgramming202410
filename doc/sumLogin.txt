@@ -1,0 +1,17 @@
+sum of numbers from 1 to 10
+sum=0;
+i  sum
+1   1
+2   3
+3   6
+4   10
+5   15
+6   21
+7   28
+8   36
+9   45
+
+
+Logic: sum=sum + i;
+identifier and assignment
+sum (variable) = value
