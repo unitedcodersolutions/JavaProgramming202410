@@ -20,6 +20,6 @@
         finalAmount : double
 
     4. Testing
-        Java JUnit Test (future SDET students)
+        Java JUni10t Test (future SDET students)
         verify console output
 

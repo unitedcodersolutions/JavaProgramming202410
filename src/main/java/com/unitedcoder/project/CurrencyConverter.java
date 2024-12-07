@@ -19,6 +19,7 @@ public class CurrencyConverter {
           System.out.println("You entered source currency: "+sourceCurrency);
           System.out.println("Please Enter Target Currency:");
           String targetCurrency=scanner.next().toUpperCase().trim(); //Target Currency
+
           System.out.println("You entered target currency: "+targetCurrency);
           // check the validity of the source and target currency
           if((sourceCurrency.equals("USD") ||sourceCurrency.equals("GBP")||
@@ -63,6 +64,5 @@ public class CurrencyConverter {
           {
               System.out.println("Please enter a valid source and target currency");
           }
-
       }
 }

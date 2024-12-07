@@ -1,0 +1,27 @@
+
+1. Requirement
+
+Design a java application that will print out the receipt for customers
+
+2. Design
+ Design Diagram (you can LucidChart Or https://app.diagrams.net/)
+
+3. Coding
+What are the inputs and data types
+
+storeName: String
+shoppingDay: DateTime
+itemName : String
+itemPrice : double
+itemQuantity: double
+itemCategory: String
+tax:          double
+paymentMethod: String (cash, card)
+subTotal: double
+
+What are the outputs
+totalItems (sum of all items)
+grandTotal=subTotal of all items + subTotal of all items * TAX
+
+4. Testing
+ verify the receipt output on the console
