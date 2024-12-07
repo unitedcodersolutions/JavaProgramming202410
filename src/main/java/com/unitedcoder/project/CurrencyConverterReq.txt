@@ -1,0 +1,25 @@
+
+  1. Requirement - design an application to convert the following currency
+        USD, EUR, GBP, JPY, TRY
+
+    2. Design Document
+        Design Diagram
+
+    3. Writing Code
+    What are the inputs, what are the outputs
+
+    Inputs (Data Type):
+
+        sourceCurrency: String
+        targetCurrency: String
+        currencyAmount: double
+        exchangeRate:   double
+
+    Outputs (Type):
+        targetCurrency : String
+        finalAmount : double
+
+    4. Testing
+        Java JUnit Test (future SDET students)
+        verify console output
+
