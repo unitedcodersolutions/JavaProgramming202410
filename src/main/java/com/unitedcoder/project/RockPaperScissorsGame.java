@@ -14,7 +14,7 @@ public class RockPaperScissorsGame {
         int totalGames=0;
         int totalWins=0;
         int totalLose=0;
-        while (true) {
+        while (true) { //you can play the game forever until you type quit
             int computerChoice = (int) (Math.random() * 3); //this will return 0, or 1 or 2
             System.out.println("Enter rock, paper or scissors (or 'quit' to stop the game)");
             String userChoice = player1.next().toLowerCase();
@@ -27,13 +27,18 @@ public class RockPaperScissorsGame {
             } else if (
                     (userChoice.equals("rock") && options[computerChoice].equals("scissors"))
                             || (userChoice.equals("scissors") && options[computerChoice].equals("paper"))
-                            || (userChoice.equals("paper") && options[computerChoice].equals("rock"))) {
+                            || (userChoice.equals("paper") && options[computerChoice].equals("rock")))
+            {
                 System.out.println("You Win");
+                totalWins++;
             } else {
                 System.out.println("You lose, computer wins");
+                totalLose++;
             }
             totalGames++;
         }
         System.out.println("Total games: "+totalGames);
+        System.out.println("You won : "+totalWins);
+        System.out.println("You lost: "+totalLose);
     }
 }
