@@ -54,7 +54,6 @@ public class MovieTicketSystem {
                 }
             }
             else {
-               // System.out.println("Please enter correctly");
                 System.out.println();
             }
             time++;
