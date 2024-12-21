@@ -38,6 +38,7 @@ public class CollectionDemo1 {
             studentSet.add(student);
         }
         System.out.println();
+        System.out.println(studentSet);
         for(String student:studentSet)
         {
             System.out.print(student+ "  ");

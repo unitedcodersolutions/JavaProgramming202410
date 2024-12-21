@@ -27,6 +27,7 @@ public class MapDemo1 {
         System.out.println(websites.containsValue("https://www.yahoo.com"));
         System.out.println(websites.containsValue("https://yahoo.com"));
         //Get all keys as keySet
+        System.out.println(websites);
         Set<String> webNames=  websites.keySet();
         for(String name: webNames)
         {
