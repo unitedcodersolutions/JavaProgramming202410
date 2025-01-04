@@ -11,7 +11,7 @@ public class StringGroup {
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"; // Characters to choose from
         Random random = new Random(); //Random object
         List<String> stringList = new ArrayList<>(); //list to hold random strings
-        for (int n = 0; n < 500; n++) {
+        for (int n = 0; n < 100; n++) {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < length; i++) {
                 int randomIndex = random.nextInt(characters.length());
