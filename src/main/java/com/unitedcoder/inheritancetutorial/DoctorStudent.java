@@ -1,7 +1,7 @@
 package com.unitedcoder.inheritancetutorial;
 import java.util.List;
 
-public class DoctorStudent extends GraduateStudent {
+public class DoctorStudent extends GraduateStudent{
     private String thesisTopic;
     private List<String> publications;
 
