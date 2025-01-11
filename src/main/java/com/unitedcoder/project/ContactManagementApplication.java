@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class ContactManagementApplication {
 
     public static void main(String[] args) {
+
         List<Contact> contactList=new ArrayList<>();
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter q to quit; add to add contact");
@@ -41,6 +42,7 @@ public class ContactManagementApplication {
                     forEach(contact -> System.out.println(contact.toString()));
             //print contacts
             contactList.forEach(contact -> System.out.println(contact.toString()));
+
         }
     }
 

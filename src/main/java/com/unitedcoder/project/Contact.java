@@ -1,5 +1,8 @@
 package com.unitedcoder.project;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Contact {
     //model of the object
     private int contactId;
@@ -98,6 +101,24 @@ public class Contact {
 
     public void setNote(String note) {
         this.note = note;
+    }
+    //add a new contact
+    public List<Contact> addContact(List<Contact> contactList, Contact contact)
+    {
+       contactList.add(contact);
+       return contactList;
+    }
+    public List<Contact> deleteContact(List<Contact> contactList,int contactId)
+    {
+    List<Contact> afterRemoveList=contactList.stream().filter(contact ->
+            contact.getContactId()!=contactId).collect(Collectors.toUnmodifiableList());
+        return  afterRemoveList;
+    }
+    //search a contact
+    public List<Contact> searchContact(List<Contact> contactList,Contact contact)
+    {
+     List<Contact> searchResultList=   contactList.stream().filter(contact1 -> contact1.getContactId()==contact.getContactId()).collect(Collectors.toUnmodifiableList());
+    return  searchResultList;
     }
 
     //toString
