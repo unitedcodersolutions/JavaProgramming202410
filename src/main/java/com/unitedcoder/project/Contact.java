@@ -1,6 +1,8 @@
 package com.unitedcoder.project;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Contact {
@@ -108,6 +110,22 @@ public class Contact {
        contactList.add(contact);
        return contactList;
     }
+
+    public List<Contact> addContact(List<Contact> contactList, List<Map<Integer,Contact>> contactMaps)
+    {
+
+        for(Map<Integer,Contact> contactMap:contactMaps)
+       {
+           Iterator<Integer> contacts=contactMap.keySet().iterator();
+           while ((contacts.hasNext()))
+           {
+               contactMap.get(contacts.next());
+           }
+           contactList.add(contactMap.get(contacts.next()));
+       }
+        return contactList;
+    }
+
     public List<Contact> deleteContact(List<Contact> contactList,int contactId)
     {
     List<Contact> afterRemoveList=contactList.stream().filter(contact ->
