@@ -1,6 +1,6 @@
 package com.unitedcoder.interfacetutorial;
 
-public class Calculator implements ICalculator,IScienceCalculator{
+public class Calculator implements ICalculator,IScienceCalculator,ISimpleCalculator{
 
     public double addTwoNumbers(double d1, double d2) {
         return d1+d2;
@@ -53,4 +53,9 @@ public class Calculator implements ICalculator,IScienceCalculator{
         return Math.sqrt(number);
     }
 
+
+    @Override
+    public double calculateAbsoluteValue(double d1) {
+        return Math.abs(d1);
+    }
 }

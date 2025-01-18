@@ -19,5 +19,7 @@ public class CalculatorApplication {
         System.out.println("Advanced calculator");
         System.out.println(myCalculator.calculatePower(10,4));
         System.out.println(myCalculator.calculateSquareRoot(36));
+        System.out.println("Calculate Absolute Value");
+        System.out.println(myCalculator.calculateAbsoluteValue(-10));
     }
 }
