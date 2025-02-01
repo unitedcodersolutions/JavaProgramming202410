@@ -1,0 +1,3 @@
+Java config properties are very easy to learn
+Today's date is: Sat Feb 01 08:56:11 EST 2025
+This is an example of config file
