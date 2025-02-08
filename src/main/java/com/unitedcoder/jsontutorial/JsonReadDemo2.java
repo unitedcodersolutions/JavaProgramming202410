@@ -16,7 +16,7 @@ public class JsonReadDemo2 {
         int wrongAnswer=0;
         int totalQuestions=0;
         try {
-            quiz1=objectMapper.readValue(new File("doc/questions.json"),Quiz.class);
+            quiz1=objectMapper.readValue(new File("doc/mathquiz.json"),Quiz.class);
             totalQuestions= quiz1.getQuestions().size();
             System.out.println("total questions: "+totalQuestions);
             for(Question question : quiz1.getQuestions())
