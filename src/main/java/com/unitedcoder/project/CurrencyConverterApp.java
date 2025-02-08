@@ -1,5 +1,5 @@
 package com.unitedcoder.project;
-import java.util.Scanner;
+
 
 public class CurrencyConverterApp {
     /*

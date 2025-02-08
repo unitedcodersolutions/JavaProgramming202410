@@ -1,0 +1,10 @@
+{
+  "type": "calculator",
+  "version": 1.0,
+  "categories:": ["simple","advanced","scientific"],
+  "price": [
+    {"simple":10,"forsale": true},
+    {"advanced": 20,"forsale": false},
+    {"scientific": 40,"forsale": true}
+  ]
+}
